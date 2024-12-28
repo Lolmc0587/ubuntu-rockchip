@@ -38,7 +38,7 @@ cd "${tmp_dir}" || exit 1
 
 # Clone the livecd rootfs fork
 git clone https://github.com/Joshua-Riek/livecd-rootfs
-cd livecd-rootfs || exit 1
+(cd livecd-rootfs && git checkout 4b3b721) || exit 1
 
 # Install build deps
 apt-get update
